@@ -13,6 +13,7 @@ and register them on an [ISCC Registry](https://github.com/iscc/iscc-registry).
 The service is configured via environment variables:
 
 - **`CHAIN_ID`** - ID of blockchain to be observed. See [supported values](https://core.iscc.codes/constants/#iscc_core.constants.ST_ID--st_id).
+- **`NODE_SERVICE_URL`** - RPC connection string (http://user:password@host:port).
 - **`REGISTRY_URL`** - URL to OpenAPI REST service of an [ISCC-REGISTRY](https://github.com/iscc/iscc-registry) for event publishing
 - **`OBSERVER_TOKEN`** - Bearer secret for authentication with ISCC-REGISTRY API service
 - **`UPDATE_INTERVAL`** - Seconds to wait betweenn synchronization of chain-events and the registry
