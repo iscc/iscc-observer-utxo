@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "iscc-observer-utxo"
+version = "0.1.0"
+description = "ISCC Decentralized Content Registry - Observer Service for UTXO based Blockchains (Bitcoin)."
+authors = ["Titusz <tp@py7.de>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://iscc.codes"
+repository = "https://github.com/iscc/iscc-observer-utxo"
+keywords=["iscc", "identifier", "media", "content", "decentralized", "registry", "observer"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+click = "^8.1"
+sentry-sdk = "^1.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+black = "*"
+poethepoet = "0.13.1"
+
+[tool.poetry.scripts]
+iscc-observer-utxo = 'iscc_observer_utxo.__main__:main'
+
+[tool.black]
+skip-string-normalization = false
+line-length = 100
+target-version = ['py39']
+
+[tool.poe.tasks]
+format = { cmd = "poetry run black .", help = "Code style formating with black" }
+lf = { cmd = "poetry run python -m tools.lf", help = "Convert line endings to lf"}
+test = { cmd = "poetry run pytest", help = "Run tests with coverage" }
+all = ["format", "lf", "test"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
