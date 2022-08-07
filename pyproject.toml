@@ -10,7 +10,7 @@ repository = "https://github.com/iscc/iscc-observer-utxo"
 keywords=["iscc", "identifier", "media", "content", "decentralized", "registry", "observer"]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<4.0"
+python = ">=3.8,<4.0"
 click = "^8.1"
 sentry-sdk = "^1.5"
 

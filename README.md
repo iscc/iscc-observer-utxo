@@ -22,7 +22,7 @@ The service is configured via environment variables:
 See example at [.env.dev](.env.dev)
 
 ## Development
-Requirements Python 3.9 with [Poetry](https://python-poetry.org/)
+Requirements Python 3.8 or higher with [Poetry](https://python-poetry.org/)
 Get started with
 ```shell
 $ git clone https://github.com/iscc/iscc-observer-utxo.git
