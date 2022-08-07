@@ -30,12 +30,12 @@ $ cd iscc-observer-utxo
 $ poetry install
 ```
 
-Start an observer instance with `poetry run iscc-observer-evm .env.dev`.
+Start an observer instance with `poetry run iscc-observer-utxo .env.dev`.
 You may provide your own .env file configured according to your local development setup.
 
 ## Deployment
 
-Docker images for deployment are available via https://ghcr.io/iscc/iscc-observer-evm.
+Docker images for deployment are available via https://ghcr.io/iscc/iscc-observer-utxo.
 See [docker-compose.yml](docker-compose.yml) for an example.
 
 
